@@ -8,16 +8,16 @@ public class EmployeeWageProgram {
     //Main method
     public static void main(String[] args) {
         EmployeeWageProgram methodCaller = new EmployeeWageProgram();
-        methodCaller.attendanceEmployee();
+        methodCaller.wageEmployee();
     }
 
-    //Method for finding attendance of Employee.
-    public void attendanceEmployee(){
-        int fullTime = 1;
-        double empCheck = Math.floor(Math.random() * 10) % 2;
-        if (empCheck == fullTime)
-            System.out.println("Employee is Present.");
-        else
-            System.out.println("Employee is Absent.");
+    //Method for calculating the per day wage of part time employee including full time employee.
+    public void wageEmployee(){
+        int hoursPerDay = 8;
+        int fullTime = hoursPerDay;
+        int partTime = hoursPerDay/2;
+        int wagePerHour = 20;
+        System.out.println("Per day wage of Part time Employee is: "+(partTime * wagePerHour)+"$");
+        System.out.println("Per day wage of Part time Employee is: "+(fullTime * wagePerHour)+"$");
     }
 }
