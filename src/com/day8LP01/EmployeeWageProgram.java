@@ -1,7 +1,7 @@
 package com.day8LP01;
 /*
 A program to simulate Employee wedge.
-To check Employee is Present or Absent.
+To calculate daly wage of part-time employee along with full time employee.
 */
 
 public class EmployeeWageProgram {
